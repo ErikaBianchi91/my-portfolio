@@ -1,0 +1,77 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 52rem;
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.097);
+  position: relative;
+}
+
+.card-picture-1 {
+  background-image: url(../hermes.png);
+  background-size: cover;
+  height: 23rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card-picture-2 {
+  background-image: url(../moneybox.png);
+  background-size: cover;
+  height: 23rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card-heading {
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: black;
+  right: 2rem;
+  text-align: right;
+  width: 75%;
+}
+.card-span {
+  position: absolute;
+  bottom: 20;
+  left: 0;
+  padding: 1rem 1.5rem;
+  background-image: linear-gradient(to right bottom, #6a5568, #582257);
+  border-radius: 5px;
+}
+.card-details {
+  padding: 3rem;
+}
+ul {
+  list-style: none;
+  width: 80%; /*so the line doesn't go all the way WITH THE MARGIN too*/
+  margin: 0 auto;
+}
+li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.last {
+  border-bottom: none;
+}
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  margin: 15px;
+  margin-left: 40%;
+  cursor: pointer;
+}

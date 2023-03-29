@@ -1,0 +1,67 @@
+.header {
+  background-image: linear-gradient(to right top, #3e1f3cc9, #582257c9),
+    url('../mypic2.jpg');
+  background-size: cover; /*to fill all the space up*/
+  background-position: center; /*when the page will be resized, just the top part will not be cropped*/
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50%;
+  grid-template-areas: 'header-picture-container header-typing-simulator';
+  height: 60vh;
+}
+.header-typing-container {
+  grid-area: header-picture-container;
+  text-align: left;
+  animation: 2s anim-lineUp ease-out;
+}
+
+.header-picture-simulator {
+  grid-area: header-typing-simulator;
+  height: 50vh;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.personal-info {
+  background-color: #131341;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  -webkit-font-smoothing: antialiased;
+  font-size: 6vw;
+}
+
+.writing-container {
+  margin-left: 20%;
+}
+
+h1 {
+  font-family: 'Unica One', cursive;
+  font-size: 1.8rem;
+}
+p {
+  font-family: 'Work Sans', helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
